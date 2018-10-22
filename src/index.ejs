@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>w4kit
+  </title>
+
+  <!-- Metadata -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Android -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Polyfill -->
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-bundle.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+
+
+  const test = () => {
+    try {
+      const docx = new DocxPdf({
+        first_name: 'John',
+        last_name: 'Doe',
+        phone: '0652455478',
+        description: 'New Website'
+      });
+      const doc = document.getElementById('app');
+      docx.fromURL("https://docxtemplater.com/tag-example.docx", (promise) => {
+        promise.then((data) => {
+          data.getDataUrl((dataURL) => {
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', dataURL);
+            iframe.setAttribute('width', '100%');
+            iframe.setAttribute('style', 'position: absolute; top:0; height: 100%; left:0; border: none;');
+            doc.appendChild(iframe);
+          });
+        });
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  test();
+</script>
+
+</html>

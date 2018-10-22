@@ -1,0 +1,9 @@
+*.zip
+*.log
+
+.vscode
+.DS_Store
+.nyc_output
+
+node_modules
+bower_components

@@ -1,4 +1,4 @@
-# Generate pdf from docx with template in BROWSER !!!!
+# Generate pdf from docx by template in BROWSER !!!!
 
 Example use yarn httpserver
 

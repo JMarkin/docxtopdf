@@ -1,7 +1,7 @@
 {
-  "name": "webpack4-starter-kit",
-  "version": "1.0.5",
-  "description": "Webpack 4 starter kit",
+  "name": "docxtopdf",
+  "version": "1.0.0",
+  "description": "Docx to PDF in Browser",
   "main": "./src/index.js",
   "scripts": {
     "dev": "node ./config/dev",
@@ -12,9 +12,8 @@
     "prehttpserver": "yarn build",
     "httpserver": "http-server ./dist -p 8082 --silent"
   },
-  "author": "Giorgio Gamberoni <giorgio.gamberoni@gmail.com> (https://github.com/king-prawns)",
+  "author": "Yura Markin <yurmarkin97@@gmail.com> (https://github.com/jmarkin)",
   "license": "MIT",
-  "homepage": "https://github.com/king-prawns/webpack4-starter-kit#readme",
   "ava": {
     "files": [
       "./src/**/*test.js"

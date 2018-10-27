@@ -1,5 +1,8 @@
-if (PRODUCTION) {
-  require('offline-plugin/runtime').install();
-}
+try {
+  if (PRODUCTION) {
+    require('offline-plugin/runtime')
+      .install();
+  }
+} catch (e) { console.log(e); }
 
-window.DocxPdf = require('./components/app').default;
+export { default } from './components/app';

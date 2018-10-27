@@ -11,14 +11,14 @@ var __wpo = {
   },
   "externals": [],
   "hashesMap": {
-    "8f0218cc7759de8730ec00f6215b042d362be36e": "/docx-to-pdf.js",
+    "b6309b0dbd9cb76f42b8e22093c2d8f8a554324f": "/docx-to-pdf.js",
     "f74f8c68f97b1924cd1d04a39d2562c5bc971faa": "/favicon.ico",
     "1b3074281625e0a9e389801cfb40db2ceed6d632": "/",
     "9552e921ac143d7b1675ddfea319b1e115818e5c": "/manifest.json"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-10-22 06:54:33",
+  "version": "2018-10-27 15:51:37",
   "name": "webpack-offline",
   "pluginVersion": "5.0.5",
   "relativePaths": false

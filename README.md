@@ -1,4 +1,4 @@
-# Generate pdf from docx by template in BROWSER !!!!
+# Generate pdf from docx by template in broweser
 
 Example use yarn httpserver
 
@@ -23,30 +23,6 @@ Example use yarn httpserver
     });
   });
 ```
-##TODO
+## TODO
 - update ol/ul
 - add subheader
-
-## Available tasks
-
-```sh
-
-# Runs development server (Webpack dev server)
-$ yarn dev
-
-# Build command
-$ yarn build
-
-# Lint with ESLint
-$ yarn lint
-
-# Run Flow
-$ yarn flow
-
-# Run unit tests (ava + instanbul)
-$ yarn test
-
-# Runs http-server on port 8082
-$ yarn httpserver
-
-```

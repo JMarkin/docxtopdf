@@ -8,7 +8,7 @@ import { ParseHtml } from '../../lib/html-pdf';
 
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
-class DocxPdf {
+export class DocxPdf {
   /**
    *
    * @param {Object} templateData
@@ -130,4 +130,7 @@ class DocxPdf {
 }
 
 
-export default DocxPdf;
+export default {
+  DocxPdf,
+  ParseHtml
+};

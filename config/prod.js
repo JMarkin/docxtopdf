@@ -14,7 +14,7 @@ fs.remove(path.resolve(__dirname, '../dist'), (err) => {
     throw err;
   }
   webpack(config, (werr, stats) => {
-    console.log('\n');
+    console.log(werr || stats.hasErrors(), '\n');
 
     if (werr || stats.hasErrors()) {
       console.log(stats.toString({

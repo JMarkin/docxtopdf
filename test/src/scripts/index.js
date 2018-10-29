@@ -1,7 +1,7 @@
 import '../styles/index.scss';
-import DocxPdf from '../../../src';
+import { DocxPdf } from '../../../dist/docx-to-pdf';
 
-console.log(DocxPdf);
+
 const test = () => {
   try {
     const docx = new DocxPdf({
